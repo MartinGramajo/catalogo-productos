@@ -33,7 +33,7 @@ export default function FormLogin({ setUser, requestUserData }) {
         const { token, name, register, role } = response.data;
         //guardamos el token en el localstorage
         guardarEnLocalStorage({ key: "token", value: { token } });
-        alert("bienvenido " + name + " " + register);
+        alert("bienvenido " + name );
         //Navigate redirecciona a la pantalla indicada en el paramentro.
           requestUserData();
           if (role === "admin") {

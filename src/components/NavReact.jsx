@@ -25,11 +25,7 @@ export default function NavReact({ user }) {
             <Nav.Link as={NavLink} to="/Productos">
               Productos
             </Nav.Link>
-            {!tokenLocal.token && (
-              <Nav.Link as={NavLink} to="/login">
-                Login
-              </Nav.Link>
-            )}
+          
             {!tokenLocal.token && (
               <Nav.Link as={NavLink} to="/register">
                 Registro
@@ -55,6 +51,13 @@ export default function NavReact({ user }) {
             )}
           </div>
         </div>
+        <div className="d-flex justify-content-end">
+            {!tokenLocal.token && (
+              <Nav.Link  className="color-fondo-login text-white" as={NavLink} to="/login">
+                Login
+              </Nav.Link>
+            )}
+            </div>
       </Container>
     </Navbar>
   );
