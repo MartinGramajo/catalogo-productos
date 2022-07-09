@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.card-productos{
+  width: 25rem;
+  background-color: aliceblue;
+}
+
+/*css aplicado al formulario crear meme*/
+.form-admin{
+  width: 75%;
+}
