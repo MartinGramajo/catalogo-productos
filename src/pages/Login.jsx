@@ -1,7 +1,10 @@
 import React from 'react'
+import FormLogin from '../components/FormLogin'
 
-export default function Login() {
+export default function Login({ setUser,requestUserData }) {
   return (
-    <div>Logins</div>
+    <div>
+      <FormLogin  setUser={setUser} requestUserData={requestUserData}/>
+    </div>
   )
 }
