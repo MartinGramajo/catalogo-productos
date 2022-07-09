@@ -1,48 +1,26 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background: #1b2838; 
 }
 
 .card-productos{
   width: 25rem;
-  background-color: aliceblue;
+  background-image: url(https://store.akamai.steamstatic.com/public/images/v6/home/background_spotlight.jpg);
+  background-position: bottom;
 }
 
 /*css aplicado al formulario crear meme*/
 .form-admin{
-  width: 75%;
+  width: 900px;
+  height: 400px;
+  background-color: #1d1e1d;
+}
+
+/*css card productos*/
+
+.boton-detalle{
+  background-color: darkblue;
+}
+
+:hover.boton-detalle{
+  background-color: rgb(5, 5, 228);
 }

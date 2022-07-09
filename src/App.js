@@ -67,7 +67,7 @@ const [isLoading, setIsLoading] = useState(true)
         <Route
           path="/"
           element={
-            <Home />} />
+            <Home productos={productos} />} />
         <Route
           path="/Productos"
           element={

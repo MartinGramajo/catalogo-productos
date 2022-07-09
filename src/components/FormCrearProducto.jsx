@@ -51,7 +51,7 @@ export default function FormCrearProducto(props) {
   return (
     <div>
       <Form
-        className="card p-5 m-auto mt-5 form-admin"
+        className="card p-5 m-auto mt-5 form-admin text-white"
         noValidate
         validated={validated}
         onSubmit={handleSubmit}
@@ -98,7 +98,7 @@ export default function FormCrearProducto(props) {
             Verifica tu imagen.
           </Form.Control.Feedback>
         </Form.Group>
-        <Button className="mx-auto" type="submit" disable={isLoading}>
+        <Button className="mx-auto btn btn-success" type="submit" disable={isLoading}>
           Crear Producto
           {isLoading && (
             <Spinner animation="border" role="status">

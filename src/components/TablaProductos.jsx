@@ -55,12 +55,10 @@ export default function TablaProductos(props) {
 
   return (
     <div>
+      <h1 className="text-white text-center my-4"> Mis Productos subidos</h1>
       <Table
-        className="mx-auto mt-5 "
+        className="mx-auto mt-5 text-white "
         style={{ width: "900px" }}
-        striped
-        bordered
-        hover
       >
         <tbody>
           {productos.length === 0
