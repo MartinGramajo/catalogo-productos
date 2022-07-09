@@ -24,3 +24,12 @@ body{
 :hover.boton-detalle{
   background-color: rgb(5, 5, 228);
 }
+
+.form-register{
+  color: #E9E9E9;
+    background-color: #212429;
+    background-position: -60vw 0;
+    background-repeat: no-repeat;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+}

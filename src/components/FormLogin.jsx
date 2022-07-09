@@ -60,8 +60,8 @@ export default function FormLogin({ setUser, requestUserData }) {
   return (
     <div>
       <Form
-        className="mx-auto card mt-5"
-        style={{ width: "600px" }}
+        className="mx-auto card  my-5 px-5 py-5 form-register"
+        style={{ width: "800px" }}
         noValidate
         validated={validated}
         onSubmit={handleSubmit}

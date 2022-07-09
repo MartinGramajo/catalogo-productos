@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 
 export default function DetalleProducto() {
   const navigate = useNavigate();
@@ -25,15 +25,16 @@ export default function DetalleProducto() {
   }, []);
 
   return (
-    <div className="d-flex justify-content-center">
-      {" "}
-      <Card className="card-meme my-5" style={{ width: "24rem" }}>
-        <Card.Img className="w-100" variant="top" src={producto.imagen} />
-        <Card.Body>
-          <Card.Title>{producto.titulo}</Card.Title>
-          <Card.Text>{producto.descripcion}</Card.Text>
-        </Card.Body>
-      </Card>
+    <div className="container text-white">
+      <div className="row my-4">
+        <div className="col-md-6 col-12">
+          <Image src={producto.imagen} alt="Product" />
+        </div>
+        <div className="col-md-6 col-12">
+          <h1 className="my-4">{producto.titulo}</h1>
+          <p>{producto.descripcion}</p>
+        </div>
+      </div>
     </div>
   );
 }
