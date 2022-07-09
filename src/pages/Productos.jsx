@@ -1,7 +1,11 @@
 import React from 'react'
+import ProductosContenidos from '../components/ProductosContenidos'
 
-export default function Productos() {
+
+export default function Productos({productos}) {
   return (
-    <div>Productoss</div>
+    <div>
+      <ProductosContenidos productos={productos} />
+    </div>
   )
 }
