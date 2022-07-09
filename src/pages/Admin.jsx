@@ -1,7 +1,12 @@
 import React from 'react'
+import FormCrearProducto from '../components/FormCrearProducto'
+import TablaProductos from '../components/TablaProductos'
 
-export default function Admin() {
+export default function Admin({getProductos, productos ,setProductos}) {
   return (
-    <div>Admins</div>
+    <div>
+      <FormCrearProducto  setProductos={setProductos} />
+      <TablaProductos getProductos={getProductos}  productos={productos} />
+    </div>
   )
 }
