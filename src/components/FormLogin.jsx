@@ -30,7 +30,7 @@ export default function FormLogin({ setUser, requestUserData }) {
           input
         );
         // guardamos los datos del response en una variable (desestructuramos)
-        const { token, name, register, role } = response.data;
+        const { token, name, role } = response.data;
         //guardamos el token en el localstorage
         guardarEnLocalStorage({ key: "token", value: { token } });
         alert("bienvenido " + name );

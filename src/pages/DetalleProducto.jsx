@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import { Card, Image } from "react-bootstrap";
+import {  Image } from "react-bootstrap";
 
 export default function DetalleProducto() {
   const navigate = useNavigate();

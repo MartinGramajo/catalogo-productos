@@ -6,8 +6,6 @@ import {
   Container,
   Form,
   Row,
-  Card,
-  Alert,
 } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
